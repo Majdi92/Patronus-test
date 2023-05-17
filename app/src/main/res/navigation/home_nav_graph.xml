@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NavigationGraphHome"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="de.patronus.test.ui.ui.userlist.UsersListFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment"
+            app:popUpTo="@+id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="de.patronus.test.ui.ui.userdetail.UserDetailFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_user_details">
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Patronus</string>
+    <string name="home_page_title">Device holders</string>
+    <string name="address_text">Address</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="fam">Fam</string>
+    <string name="ban">Ban</string>
+</resources>
